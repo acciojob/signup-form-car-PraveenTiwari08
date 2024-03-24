@@ -8,7 +8,7 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form type="post">
+	<form method="post">
 		<label for="name">Name</label>
 		<input type="text" required id="name" placeholder="Name">
 		<br>
@@ -28,9 +28,17 @@
     </div>
 		<br>
 		<br>
-		<label for="cars">Car Brands</label>
-		<input type="Select" required id="cars" placeholder="--Please choose an option-">
-		<br>
+		 <div>
+      <label for="cars">Car Brands:</label>
+      <select id="cars" name="cars" required>
+        <option value="" disabled selected>--Please choose an option--</option>
+        <option value="Toyota">Toyota</option>
+        <option value="Honda">Honda</option>
+        <option value="Ford">Ford</option>
+        <option value="Chevrolet">Chevrolet</option>
+        <option value="BMW">BMW</option>
+      </select>
+    </div><br>
 		<br>
 		<label for="age">Age</label>
 		<input type="Number" required id="age" placeholder="Age">
